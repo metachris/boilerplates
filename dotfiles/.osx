@@ -36,7 +36,7 @@ defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
 
 # Disable the “Are you sure you want to open this application?” dialog
-defaults write com.apple.LaunchServices LSQuarantine -bool false
+#defaults write com.apple.LaunchServices LSQuarantine -bool false
 
 # Disable shadow in screenshots
 defaults write com.apple.screencapture disable-shadow -bool true
@@ -69,9 +69,9 @@ defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false
 defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
 
 # Disable disk image verification
-defaults write com.apple.frameworks.diskimages skip-verify -bool true
-defaults write com.apple.frameworks.diskimages skip-verify-locked -bool true
-defaults write com.apple.frameworks.diskimages skip-verify-remote -bool true
+#defaults write com.apple.frameworks.diskimages skip-verify -bool true
+#defaults write com.apple.frameworks.diskimages skip-verify-locked -bool true
+#defaults write com.apple.frameworks.diskimages skip-verify-remote -bool true
 
 # Automatically open a new Finder window when a volume is mounted
 defaults write com.apple.frameworks.diskimages auto-open-ro-root -bool true
@@ -103,7 +103,7 @@ defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
 
 # Enable tap to click (Trackpad)
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+#defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
 
 # Map bottom right Trackpad corner to right-click
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadCornerSecondaryClick -int 2
@@ -151,9 +151,9 @@ hash tmutil &> /dev/null && sudo tmutil disablelocal
 #echo "0x08000100:0" > ~/.CFUserTextEncoding
 
 # Remove Dropbox’s green checkmark icons in Finder.app
-file=/Applications/Dropbox.app/Contents/Resources/check.icns
-[ -e "$file" ] && mv -f "$file" "$file.bak"
-unset file
+#file=/Applications/Dropbox.app/Contents/Resources/check.icns
+#[ -e "$file" ] && mv -f "$file" "$file.bak"
+#unset file
 
 # Kill affected applications
 for app in Safari Finder Dock Mail; do killall "$app"; done

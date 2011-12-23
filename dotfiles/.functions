@@ -1,6 +1,10 @@
 # Create a new directory and enter it
-function md() {
+function mcd() {
   mkdir -p "$@" && cd "$@"
+}
+
+function easy_grep() {
+  grep "$@" * -nir
 }
 
 # Test if HTTP compression (RFC 2616 + SDCH) is enabled for a given URL.

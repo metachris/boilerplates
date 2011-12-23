@@ -1,11 +1,30 @@
+# Quick shortcuts
+alias n="nano -w"
+alias f="find ./ -name"
+# easy_grep is defined in .functions
+alias gr="easy_grep"
+
+alias psgr="ps aux | grep"
+
+# Git shortcuts
+alias g='git'
+alias gs='git status | more'
+alias ga='git add '
+alias gb='git branch '
+alias gc='git commit'
+alias gd='git diff'
+alias go='git checkout '
+alias gl='git log'
+alias gh='git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short'
+
 # Easier navigation: .., ..., ~ and -
 alias ..="cd .."
 alias ...="cd ../.."
-alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 # List all files colorized in long format, including dot files
-alias la="ls -Gla"
+alias ll="ls -alGHhf"
+alias l="ls -lGHh"
 
 # List only directories
 alias lsd='ls -l | grep "^d"'
@@ -50,7 +69,7 @@ alias c="tr -d '\n' | pbcopy"
 alias cleanup="find . -name '*.DS_Store' -type f -ls -delete"
 
 # Shortcuts
-alias d="cd ~/Documents/Dropbox"
+alias d="cd ~/Dropbox"
 alias p="cd ~/Projects"
 alias g="git"
 alias v="vim"
@@ -84,7 +103,4 @@ alias plistbuddy="/usr/libexec/PlistBuddy"
 # One of @janmoesen’s ProTip™s
 for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do alias "$method"="lwp-request -m '$method'"; done
 
-# Stuff I never really use but cannot delete either because of http://xkcd.com/530/
-alias stfu="osascript -e 'set volume output muted true'"
-alias pumpitup="osascript -e 'set volume 10'"
 alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"

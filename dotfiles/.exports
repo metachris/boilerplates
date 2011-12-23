@@ -9,3 +9,7 @@ export HISTFILESIZE=$HISTSIZE
 export HISTCONTROL=ignoredups
 # Make some commands not show up in history
 export HISTIGNORE="ls:ls *"
+
+#export ARCHFLAGS="-arch x86_64"
+
+#export PATH=${PATH}:~/Tools/android-sdk-macosx/platform-tools
