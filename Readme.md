@@ -4,9 +4,9 @@ Boilerplates are basic setups with best practices. Just take the parts you like.
 
 ### Python
 
-* [Python Script](https://github.com/metachris/boilerplates/tree/master/python)
-* [Tornado Website](https://github.com/metachris/tornado-boilerplate)
-* [App Engine Website](https://github.com/metachris/appengine-boilerplate)
+* [Python Script](https://github.com/metachris/boilerplates/tree/master/python) with yaml config file and unit tests
+* [Tornado Website](https://github.com/metachris/tornado-boilerplate) with lots of goodies
+* [App Engine Website](https://github.com/metachris/appengine-boilerplate) with lots of goodies
 
 
 ### PEP8 Pre Commit Hook for Git
